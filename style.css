@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:800');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+html{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-image: url('images/back.png');
+	background-repeat: no-repeat;
+	background-size: 25%;
+	margin: 0;
+	padding: 0;
+	font-family: Montserrat;
+}
+input{
+	height: 40px;
+	width: 300px;
+	padding: 10px;
+	font-size: 16px;
+}
+.container{
+	width: 85%;
+}
+.nav{
+	margin-top: 30px;
+}
+.nav h3{
+	margin: 0;
+	width: 200px;
+	margin-left: 10%;
+	display: inline-block;
+}
+.nav-tabs{
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	margin-top: 0;
+}
+.navbar{
+	margin-top: 70px;
+}
+.navbar h3{
+	display: inline; 
+	margin-left: 15%;
+}
+.active{
+	text-align: center;
+	width: 150px;
+}
+.active a{
+	margin-right: 0 !important;
+	border-bottom: 1px;
+}
+.nav-tabs>li>a{
+	border-radius: 0;
+	font-size: 12px;
+}
+.nav-tabs>li.active>a{
+	border-color: #e9ebea;
+	border-width: 0.5px;
+}
+#head{
+	margin-top: 120px;
+	font-size: 55px;
+	font-family: Open Sans;
+	letter-spacing: 0;
+}
+#info{
+	width: 50%;
+	font-weight: 600;
+}
+#open{
+	background: #f75b10;
+	width: 300px;
+	height: 50px;
+	font-size: 25px;
+	color: white;
+	display: inline;
+	padding: 10px;
+}
+#open img{
+	margin-left: 30px;
+	height: 30px;
+	width: 80px;
+}
+#slide-head{
+	text-align: center;
+	font-weight: 600;
+}
+#slide-wrap{
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 100px;
+	height: 350px;
+	display: inline-flex;
+}
+#slide-wrap div{
+	border: 1px solid #e9ebea;
+	flex: 1;
+	height: 100%;
+	overflow-x: hidden;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#slide-wrap img{
+	height: 100%;
+	transition: all 1s ease; 
+}
+#main{
+	flex: 1;
+}
+.second{
+	flex: 1 !important;
+}
+#foot{
+	margin-bottom: 40px;
+}
+#foot img{
+	height: 20px;
+}
+#foot h4{
+	display: inline-block;
+	vertical-align: middle;
+	color: #959595 !important;
+}
+#footer{
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	width: 50%;
+}
+#footer img, #footer h6{
+	display: inline-block;
+}
+#footer h6{
+	font-weight: 600;
+}
+#footer img{
+	margin-left: 15%;
+}
+#meet{
+	display: flex;
+	width: 100%;
+	margin-bottom: 50px;
+}
+#meet div{
+	flex: 1;
+}
+#meet img{
+	height: 350px;
+	width: 100%;
+}
+.logo{
+	height: 40px !important;
+	width: 40px !important;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+.active a{
+	cursor: pointer;
+}
+@media only screen and (max-width: 1030px){
+	body{
+		background-size: 40%;
+	}
+	.navbar h3{
+		margin-left: 5%;
+	}
+}
+@media only screen and (max-width: 780px){
+	.container{
+		width: 100%;
+	}
+	#footer img{
+		margin-left: 10%;
+	}
+	.navbar h3{
+		display: none;
+	}
+}
+@media only screen and (max-width: 420px){
+	.active{
+		width: initial;
+	}
+	#head{
+		margin-top: 30px;
+		font-size: 40px;
+	}
+	#info{
+		width: initial;
+	}
+	.first, .second{
+		display: none;
+	}
+	#footer{
+		display: block;
+		position: static;
+		width: initial;
+		margin-top: 20px;
+	}
+	#meet{
+		display: block;
+	}
+}
+@media only screen and (max-width: 380px){
+	.nav>li>a{
+		padding: 5px 10px;
+	}
+	#open{
+		font-size: 20px;
+	}
+	#footer img{
+		margin-left: 5%;
+	}
+}
+@media only screen and (max-width: 330px){
+	.navbar{
+		margin-top: 50px;
+		margin-bottom: 0;
+	}
+	.nav-tabs>li>a{
+		font-size: 10px;
+	}
+	#head{
+		margin-top: 0px;
+		font-size: 30px;
+	}
+	#info{
+		font-size: 15px;
+	}
+	#open{
+		font-size: 15px;
+	}
+	#meet img{
+		height: 250px;
+	}
+}
